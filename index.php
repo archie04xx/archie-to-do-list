@@ -10,15 +10,15 @@ include("pagination_dsp.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <aside class="sidebar">
+    <aside class="header">
         <h2>Welcome My Friendo</h2>
         <h2>|</h2>
-        <a href="#">To-Do List</a>
+        <h2>To-Do List</h2>
     </aside>
 
     <main class="main-content">
@@ -37,7 +37,7 @@ include("pagination_dsp.php");
                         <div class="task-actions">
                             <a href="complete_task.php?id=<?= $task['id']; ?>&page=<?= $page; ?>&completed_page=<?= $completed_page; ?>" class="complete-btn">✔ </a>
                             <a href="edit_task_form.php?id=<?= $task['id']; ?>&page=<?= $page; ?>&completed_page=<?= $completed_page; ?>" class="edit-btn">✏️</a>   
-                            <a href="delete_task.php?id=<?= $task['id']; ?>&page=<?= $page; ?>&completed_page=<?= $completed_page; ?>" class="delete-btn" onclick="return confirm('Are you sure?')">❌</a>
+                            <a href="delete_task.php?id=<?= $task['id']; ?>&page=<?= $page; ?>&completed_page=<?= $completed_page; ?>" class="delete-btn" >❌</a>
                         </div>
                     </li>
                 <?php endforeach; ?>
