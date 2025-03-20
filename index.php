@@ -16,9 +16,9 @@ include("pagination_dsp.php");
 
 <div class="container">
     <aside class="header">
-        <h2>Welcome My Friendo</h2>
+        <a href="indexx.php"><h2>Portfolio</h2></a>
         <h2>|</h2>
-        <h2>To-Do List</h2>
+        <a href="index.php"><h2>To-Do List</h2></a>
     </aside>
 
     <main class="main-content">
